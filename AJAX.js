@@ -1,5 +1,5 @@
 function fetchAnton(x) {
-  const promise1 = new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
     xhr.open("GET", x);
     xhr.onreadystatechange = function () {
@@ -11,5 +11,4 @@ function fetchAnton(x) {
     };
     xhr.send();
   });
-  return promise1;
 }
