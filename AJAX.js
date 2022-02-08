@@ -6,8 +6,7 @@ function fetchAnton(x) {
       if (xhr.readyState !== 4 || xhr.status !== 200) {
         return;
       }
-      const response = JSON.parse(xhr.response);
-      resolve(response);
+      resolve(JSON.parse(xhr.response));
     };
     xhr.send();
   });
